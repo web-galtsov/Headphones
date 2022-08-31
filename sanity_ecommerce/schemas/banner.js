@@ -12,8 +12,21 @@ export default {
           },
       },
       {
+          name: 'imageF',
+          title: 'ImageF',
+          type: 'image',
+          options: {
+              hotspot: true,
+          },
+      },
+      {
           name: 'buttonText',
           title: 'ButtonText',
+          type: 'string',
+      },
+      {
+          name: 'buttonTextF',
+          title: 'ButtonTextF',
           type: 'string',
       },
       {
@@ -27,8 +40,18 @@ export default {
           type: 'string',
       },
       {
+          name: 'descF',
+          title: 'DescF',
+          type: 'string',
+      },
+      {
           name: 'smallText',
           title: 'SmallText',
+          type: 'string',
+      },
+      {
+          name: 'smallTextF',
+          title: 'SmallTextF',
           type: 'string',
       },
       {
@@ -37,8 +60,18 @@ export default {
           type: 'string',
       },
       {
+          name: 'midTextF',
+          title: 'MidTextF',
+          type: 'string',
+      },
+      {
           name: 'largeText1',
           title: 'LargeText1',
+          type: 'string',
+      },
+      {
+          name: 'largeText1F',
+          title: 'LargeText1F',
           type: 'string',
       },
       {
@@ -51,7 +84,7 @@ export default {
           title: 'Discount',
           type: 'string',
       },
-      {
+       {
           name: 'saleTime',
           title: 'SaleTime',
           type: 'string',
