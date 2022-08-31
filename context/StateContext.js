@@ -21,11 +21,16 @@ export const StateContext = ({ children }) => {
 
     if(checkProductInCart) {
       const updatedCartItems = cartItems.map((cartProduct) => {
-        if(cartProduct._id === product._id) return {
-          ...cartProduct,
-          quantity: cartProduct.quantity + quantity
-        }
-      })
+            if (cartProduct._id === product._id) {
+                return {
+                    ...cartProduct,
+                    quantity: cartProduct.quantity + quantity,
+                };
+            } else {
+                return cartProduct;
+            }
+        });
+
 
       setCartItems(updatedCartItems);
     } else {
@@ -33,6 +38,8 @@ export const StateContext = ({ children }) => {
 
       setCartItems([...cartItems, { ...product }]);
     }
+
+
 
     toast.success(`${qty} ${product.name} added to the cart.`);
   }
